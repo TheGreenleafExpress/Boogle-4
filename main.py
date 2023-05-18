@@ -1,5 +1,4 @@
-<html>
-<py-script>
+
 from flask import Flask, redirect, render_template, url_for, request
 from replit import web, db
 import requests,random,sys
@@ -248,5 +247,4 @@ def dice():
     return render_template("dice.html",boosting=is_following(web.auth.name)["isFollowingCurrentUser"],profile_pic=request.headers["X-Replit-User-Profile-Image"],name=web.auth.name)
 
 app.run(host="0.0.0.0",port=81,debug=True)
-</py-script>
-    </html>
+
